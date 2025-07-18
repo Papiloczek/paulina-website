@@ -1,0 +1,33 @@
+*.php
+wp-admin/
+wp-includes/
+wp-config.php
+wp-config-sample.php
+readme.html
+license.txt
+index.php
+
+!wp-content/
+
+
+wp-content/uploads/
+
+
+wp-content/cache/
+wp-content/debug.log
+*.log
+
+# Backup
+*.sql
+*.bak
+
+# Docker
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
