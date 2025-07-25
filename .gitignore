@@ -6,6 +6,8 @@ wp-config-sample.php
 readme.html
 license.txt
 index.php
+page-system-kierowcow.php
+template-parts/driver-system.php
 
 node_modules/
 package-lock.json
