@@ -1,0 +1,130 @@
+.header-wrapper {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    /* background-color: rgba(27, 42, 46, 0.9) */
+    background: linear-gradient(to bottom, rgb(24, 22, 22), rgba(48, 44, 44, 0));
+    
+  }
+  
+  .desktop-menu {
+    display: block;
+  }
+  
+  .desktop-menu .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .desktop-menu .menu li a {
+    padding: 14px 20px;
+    color: #f5f5dc;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: 'fira code';
+    text-transform: uppercase;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    z-index: 10000;
+  }
+  
+  .fullscreen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Ciemne tło */
+    color: white;
+    z-index: 9999; /* Aby menu było na wierzchu */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .fullscreen-menu.active {
+    display: flex;
+  }
+ 
+  .fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .fullscreen-menu li {
+    margin: 20px 0;
+    font-family: 'fira code' ;
+    text-transform: uppercase;
+   
+  }
+    
+  .fullscreen-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+    
+  } 
+  
+  .fullscreen-menu li a:hover {
+    color:  #1b2a2e; /* Kolor po najechaniu */
+  }
+
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  /* .menu li a {
+    padding: 14px 20px;
+    color: #f5f5dc;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: fira code;
+  }  */
+
+  
+  @media (max-width: 860px) {
+    .logo-container img{
+      max-width: 190px;
+      height: auto;
+    }
+
+    .desktop-menu {
+      display: none;
+      max-width: 180px;
+    }
+  
+    .fullscreen-menu.active {
+      display: flex;
+      }
+  
+    .hamburger {
+      
+      display: block;
+      color: white;
+    }
+}
