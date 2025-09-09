@@ -12,7 +12,9 @@ template-parts/driver-system.php
 node_modules/
 package-lock.json
 
-!wp-content/
+wp-content/*
+!wp-content/themes/
+!wp-content/themes/ppCompany/
 
 
 wp-content/uploads/
