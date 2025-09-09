@@ -1,0 +1,294 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(27, 42, 46, 0.9);
+    box-sizing: border-box;
+  }
+  
+  .desktop-menu {
+    display: block;
+  }
+  
+  .desktop-menu .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .desktop-menu .menu li a {
+    padding: 14px 20px;
+    color: #4fd1c5;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: 'fira code', monospace;
+    text-transform: uppercase;
+  }
+  
+  .desktop-menu .menu li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: rgba(27, 42, 46, 0.95);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 100;
+  }
+  
+  .desktop-menu .menu li:hover > .sub-menu {
+    display: block;
+  }
+  
+  .desktop-menu .menu li .sub-menu li {
+    display: block;
+    width: 100%;
+  }
+  
+  .desktop-menu .menu li .sub-menu li a {
+    padding: 10px 20px;
+    color: #4fd1c5;
+    text-decoration: none;
+    display: block;
+    font-family: 'fira code', monospace;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .desktop-menu .menu li .sub-menu li a:hover {
+    background-color: rgba(27, 48, 52, 1);
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    z-index: 10000;
+  }
+  
+  .fullscreen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Ciemne tło */
+    color: white;
+    z-index: 9999; /* Aby menu było na wierzchu */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .fullscreen-menu.active {
+    display: flex;
+     /* Menu wyświetla się po aktywacji */
+  }
+  
+  .fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .fullscreen-menu li {
+    margin: 20px 0;
+  }
+  
+  .fullscreen-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s;
+    font-family: fira code;
+  }
+  
+  .fullscreen-menu li a:hover {
+    color: #19835c; /* Kolor po najechaniu */
+  }
+  
+  
+  /* .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+    
+  }
+  
+  .menu li:hover .sub-menu {
+    display: block;
+  }
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .menu li a {
+    padding: 14px 20px;
+    color: #4fd1c5;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: fira code;
+    text-transform: uppercaser;
+  } */
+  
+  /* .menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: rgba(27, 42, 46, 0.9);
+  }
+  
+  .menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu li a {
+    
+    padding: 14px 20px;
+    color: #4fd1c5;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: fira code;
+    text-transform: uppercaser;
+  }
+  
+  .menu li a:hover {
+    background-color: rgba(27, 48, 52, 1);
+  } */
+  
+  
+  
+  
+  /* Stylizacja rozwijanego menu */
+  /* .menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    width: 100%;
+    max-height: 0; /* Zaczynamy z maksymalną wysokością 0 */
+    /* overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Animacja */
+  
+  
+  /* .menu nav ul li:hover > ul {
+    display: block; */
+    /* max-height: 300px; Ustawiamy maksymalną wysokość, aby submenu się rozwijało */
+  
+  
+  /* .menu nav ul li ul li a { */
+    /* padding: 12px 20px; */
+    /* text-align: left; */
+    /* white-space: nowrap; */
+  /* } */
+  
+  /* Stylizacja dla hamburger menu */
+  /* .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+  } */
+  /* nawigacja tu sie bawie teraz----------------------------------------------------------------- */
+  
+  /* mobilki  */
+
+  @media (max-width: 860px) {
+    
+    .desktop-menu {
+      display: none;
+    }
+  
+    .fullscreen-menu.active {
+      display: flex;
+      }
+  
+    .hamburger {
+      display: block;
+      color: white;
+    }
+   
+  
+  /* 
+    
+    .menu {
+      display: none;
+      flex-direction: column;
+      
+      padding: 10px;
+      position: absolute;
+      top: 60px;
+      right: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  
+    .menu.active {
+      display: flex;
+    } */
+    
+  
+    /* nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li a {
+      text-align: left;
+      padding: 10px 20px;
+    }
+  
+    nav.active ul {
+      display: block;
+    }
+  
+    nav ul li ul {
+      position: static;
+      display: none;
+      width: 100%; /* Jedna kolumna w wersji mobilnej */
+      /* max-height: 0; */
+      /* overflow: hidden; */
+      /* transition: max-height 0.3s ease-out; Animacja dla mobilnej wersji */
+    /* } */ 
+  
+    nav ul li.active > ul {
+      display: block;
+      max-height: 300px; /* Maksymalna wysokość dla submenu */
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
